@@ -336,6 +336,30 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
 
 /* fin de aboutus */
 
+/* inicio de main, en blog  */
+
+main #blog {
+    display: flex;
+    flex: wrap;
+    
+
+    
+    
+    
+}
+main #blog article{
+    margin: 10px;
+}
+
+
+
+
+
+    
+   /* final del main,s */
+    
+
+
 /* media de 600px */
 
 @media(min-width: 37.500em) {
