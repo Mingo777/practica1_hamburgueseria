@@ -343,8 +343,9 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
 main #blog {
     display: flex;
     flex: wrap;
-    margin-left: 300px;
-    margin-right: 300px;
+    
+   flex-direction: wrap;
+  
 
 
     
@@ -353,7 +354,7 @@ main #blog {
 }
 main #blog article{
     margin: calc(var(--margingrid));
-    padding: 30px;
+    padding: 30px auto;
     position:flex;
 
 }
@@ -377,7 +378,7 @@ main #blog .cuadrado h2{
 }
 main #blog article figure img{
     
-    flex-direction: row;
+    display: inline-flexbox;
     
     
 }
@@ -429,15 +430,45 @@ main #blog article h4 {
     }
     main #blog article{
         
-        flex-direction: column;
-    }
+        
+            width: calc(50% - (2*var(--margingrid)));
+            padding: 0em var(--margingrid);
+            border-left: 0.5px solid #aaa;
+            border-bottom: 0;
+            margin: var(--margingrid);
+        }
     main #blog article .cuadrado{
+        flex-direction: initial;
         
        
     }
 }
 
+/* inicio main menu */´
+main #menu{
+    background-color: var(--colorsecundario);
+    height: 300px;
+}
 
+main #menu aside {
+    height: 100;
+    width: 300px;
+    
+
+}
+main #menu .platos article figure{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+main #menu .platos article .texto{
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    b
+}
+/* final menu */
 /* media de 768px */
 
 @media(min-width: 48em) {
@@ -473,4 +504,6 @@ main #blog article h4 {
         border: 0px;
         padding: 0.4em 1.25em;
     }
+
+    main #menu 
 }
