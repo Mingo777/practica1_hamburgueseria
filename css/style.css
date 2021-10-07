@@ -343,7 +343,9 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
 main #blog {
     display: flex;
     flex: wrap;
-    
+    margin-left: 300px;
+    margin-right: 300px;
+
 
     
     
@@ -360,8 +362,10 @@ main #blog .cuadrado{
     height: 100px;
     width: 100px;
     position: absolute;
+    display: inline-block;
     opacity: 0.7;
-    flex-wrap: wrap
+    flex: flex
+
 }
 main #blog .cuadrado h2{
     margin-top: 20%;
@@ -373,7 +377,7 @@ main #blog .cuadrado h2{
 }
 main #blog article figure img{
     
-    
+    flex-direction: row;
     
     
 }
@@ -421,15 +425,14 @@ main #blog article h4 {
     }
     main #aboutus figure {
         width: 100%;
-        margin: 0em;
+        margin: 0 auto;
     }
     main #blog article{
-        width: calc(50% - (2*var(--margingrid)));
-        padding: 0em var(--margingrid);
-        border-bottom: 0;
-        margin: var(--margingrid);
+        
+        flex-direction: column;
     }
     main #blog article .cuadrado{
+        
        
     }
 }
