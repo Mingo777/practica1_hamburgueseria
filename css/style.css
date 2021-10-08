@@ -302,6 +302,8 @@ main section .flex article div i {
 
 /* fin de ourservices */
 
+
+
 /* inicio de aboutus */
 
 main section h3 {
@@ -335,6 +337,88 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
 }
 
 /* fin de aboutus */
+/* inicio de menu */
+main #menu {
+    background-color: var(--colorsecundario);
+    height: 90vh;
+}
+
+main #menu h2 {
+    font-family: var(--fuentesecundaria);
+    color: white;
+    font-weight: bold;
+}
+
+main #menu .flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+}
+
+main #menu aside {
+    width: 25%;
+    position: relative;
+    font-family: var(--fuentesecundaria)
+;
+}
+
+main #menu .platos {
+   flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: sp;
+  
+  
+}
+
+main #menu .flex .platos article {
+    display: flex;
+    flex-wrap: wrap;
+    border: 0;
+    margin: 0;
+    padding: 20px;
+    flex-direction: row;
+   
+}
+
+main #menu .platos article figure {
+    height: 300px;
+    justify-content: center;
+    width: 100%;
+}
+
+main #menu .flex .platos article .texto {
+    width: var(33.333 *(--anchomaximo));
+    font-family: var(--fuenteprincipal);
+    width: 100%;
+    font-weight: bold;
+    
+}
+
+main #menu aside ul li {
+    margin: 10px;
+}
+
+main #menu aside ul li a {
+    display: block;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+main #menu aside ul li a:hover, main #menu aside ul .activo a {
+    background-color: var(--colorprincipal);
+}
+
+
+
+
+
+
+
+/* fin de menu */
 
 /* media de 600px */
 
@@ -371,6 +455,8 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
     main section .flex article, main section .flex article:last-child {
         width: calc(33.333% - (2*var(--margingrid)));
     }
+    main section .flex article, main section .flex article:last-child {
+        width: calc(33.333% - (2*var(--margingrid)));
     footer {
         text-align: left;
     }
