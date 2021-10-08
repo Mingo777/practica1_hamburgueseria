@@ -302,8 +302,6 @@ main section .flex article div i {
 
 /* fin de ourservices */
 
-
-
 /* inicio de aboutus */
 
 main section h3 {
@@ -337,38 +335,125 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img {
 }
 
 /* fin de aboutus */
-/* inicio de menu */
+
+/* inicio blog */
+
+
+main #blog {
+    display: flex;
+   flex-direction: wrap;
+   
+
+}
+main #blog article{
+    margin: 10px ;
+    
+    width: 100% - 20px;
+    height:  0 auto;
+    display: block;
+    
+
+}
+main #blog  article .cuadrado{
+    background-color: var(--colorprincipal);
+    height: 0 auto;
+    width: calc(100px - 20px);
+    position: absolute;
+    display: block;
+    opacity: 0.6;
+    justify-content: space-between;
+
+}
+main #blog .cuadrado h2{
+    margin-top: 20%;
+    color:  white;
+    opacity: 1;
+    display: list-item;
+    font-family: var(--fuenteprincipal)
+    
+}
+main #blog article figure {
+    
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    
+    
+}
+
+main #blog article  h3{
+    color: var(--colorsecundario);
+    margin-top: 10px;
+    position: relative;
+    font-family: var(--fuentesecundaria);
+    font-size: 23px;
+}
+
+main #blog article h4 {
+    color: var(--colorprincipal);
+    position: relative;
+    font-weight: bold;
+
+}
+/* final blog */
+
+/* inicio menu */
+
 main #menu {
     background-color: var(--colorsecundario);
-    height: 90vh;
+    height: 100vh;
 }
 
 main #menu h2 {
-    font-family: var(--fuentesecundaria);
     color: white;
-    font-weight: bold;
 }
 
 main #menu .flex {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-  
 }
 
 main #menu aside {
-    width: 25%;
-    position: relative;
-    font-family: var(--fuentesecundaria)
-;
+    width: 100%;
+    background-color: var(--colorsecundario);
+
+}
+main #menu aside .indiceMenu{
+    display: block;
+    margin-top: 60%;
+    margin-right: 50%;
+
+}
+
+main #menu aside .indiceMenu h4{
+    font-family: var(--fuentesecundaria);
+    color: white;
+    font-size: 24px;
+}
+
+main #menu aside .indiceMenu hr {
+    width: 30%;
+    text-align: left;
+    display: inline-block;
+    border: rgba(255, 0, 0, 0.521) solid 1px;
+    
+
+    
+
+}
+main #menu aside .indiceMenu p {
+    font-weight: 400;
+    font-family: var(--fuentesecundaria);
+    margin-right: 30%;
+    display: inline-block;
 }
 
 main #menu .platos {
-   flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: sp;
-  
-  
+    width: 100%;
+    display: block;
+    height: auto;
+    background-color: var(--colorsecundario)
 }
 
 main #menu .flex .platos article {
@@ -376,24 +461,43 @@ main #menu .flex .platos article {
     flex-wrap: wrap;
     border: 0;
     margin: 0;
-    padding: 20px;
-    flex-direction: row;
-   
+    padding: 10px;
+    justify-content: left;
 }
 
 main #menu .platos article figure {
-    height: 300px;
-    justify-content: center;
-    width: 100%;
+    height:  0 auto;
+    width: calc(100%- 20px);
+    display: block;
+    margin: 0 auto;
 }
 
 main #menu .flex .platos article .texto {
-    width: var(33.333 *(--anchomaximo));
-    font-family: var(--fuenteprincipal);
+    height: 0 auto;
     width: 100%;
-    font-weight: bold;
+    text-align: left;
+    padding: 2em 1em;
+    ;
+}
+main #menu .flex .platos article .texto h3{
+    color: white;
     
 }
+main #menu .flex .platos article .texto h3 span{
+    color:var(--colorprincipal);
+    text-align: right;
+    
+
+    
+    
+   
+    
+   
+
+}
+
+
+
 
 main #menu aside ul li {
     margin: 10px;
@@ -406,86 +510,24 @@ main #menu aside ul li a {
     color: white;
     border-radius: 10px;
     transition: 0.5s;
+    text-decoration: none;
+    font-family: var(--fuentesecundaria);
 }
+
+main #menu .texto .enlace {
+    border: none;
+
+}
+    
+    
+    
+
 
 main #menu aside ul li a:hover, main #menu aside ul .activo a {
     background-color: var(--colorprincipal);
 }
 
-
-
-
-
-
-
 /* fin de menu */
-
-/* inicio de main, en blog  */
-
-
-
-main #blog {
-    display: flex;
-    flex: wrap;
-    
-   flex-direction: wrap;
-
-}
-main #blog article{
-    margin: calc(var(--margingrid));
-    padding: 30px auto;
-    position:flex;
-
-}
-main #blog  article .cuadrado{
-    background-color: var(--colorprincipal);
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    display: flex;
-    opacity: 0.7;
-    flex-direction: wrap;
-    justify-content: space-between;
-
-}
-main #blog .cuadrado h2{
-    margin-top: 20%;
-    color:  white;
-    opacity: 1;
-    display: list-item;
-    font-family: var(--fuenteprincipal)
-    
-}
-main #blog article figure img{
-    
-    display: inline-flexbox;
-    
-    
-}
-
-main #blog article  h3{
-    color: var(--colorsecundario);
-    margin-top: 10PX;
-    position: relative;
-    font-family: var(--fuentesecundaria);
-    font-size: 23px;
-}
-
-main #blog article h4 {
-    color: var(--colorprincipal);
-    position: relative;
-    font-weight: bold;
-
-}
-
-
-
-
-
-    
-   /* final del main,s */
-    
-
 
 /* media de 600px */
 
@@ -506,50 +548,33 @@ main #blog article h4 {
     }
     main #aboutus figure {
         width: 100%;
-        margin: 0 auto;
+        margin: 0em;
+        
     }
-    main #blog article{
+
+    main #blog .flex article {
+        width:100%;
+        clear: both;
+        display: table;
         
         
-            width: calc(50% - (2*var(--margingrid)));
-            padding: 0em var(--margingrid);
-            border-left: 0.5px solid #aaa;
-            border-bottom: 0;
-            margin: var(--margingrid);
-        }
-    main #blog article .cuadrado{
-        flex-direction: wrap;
-        ;
-        
-       
+         
+
     }
-}
-
-/* inicio main menu */´
-main #menu{
-    background-color: var(--colorsecundario);
-    height: 300px;
-}
-
-main #menu aside {
-    height: 100;
-    width: 300px;
+    
+    }
+    main #menu .flex article {
+        width: 100%;
+        display: block;
+        height: auto;
+        
+    }
     
 
-}
-main #menu .platos article figure{
-    height: 100px;
-    width: 100%;
-    background-color: white;
-}
-main #menu .platos article .texto{
-    height: 100px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    
     
 }
-/* final menu */
+
 /* media de 768px */
 
 @media(min-width: 48em) {
@@ -562,10 +587,11 @@ main #menu .platos article .texto{
     main section .flex article, main section .flex article:last-child {
         width: calc(33.333% - (2*var(--margingrid)));
     }
-    main section .flex article, main section .flex article:last-child {
-        width: calc(33.333% - (2*var(--margingrid)));
     footer {
         text-align: left;
+    }
+    main #menu .flex article {
+        width: 100%;
     }
 }
 
@@ -587,6 +613,19 @@ main #menu .platos article .texto{
         border: 0px;
         padding: 0.4em 1.25em;
     }
-
-    
+    main #menu aside {
+        width: 30%;
+    }
+    main #menu .platos {
+        width: 70%;
+    }
+    main #menu .flex article {
+        width: 100%;
+    }
+    main #menu .platos article figure {
+        width: 30%;
+    }
+    main #menu .flex .platos article .texto {
+        width: 70%;
+    }
 }
